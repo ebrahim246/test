@@ -21,12 +21,12 @@ app.post('/api/email', async function(req, res) {
     
     const transporter = nodemailer.createTransport({
         service : "gmail",
-        auth : {    user : process.env.EMAIL_ADDRESS,
-                    pass : process.env.EMAIL_PASSWORD }
+        auth : {    user : process.env.languageisland980,
+                    pass : process.env.Toronto2468 }
     })
 
     const mailOptions={
-        from: process.env.EMAIL_ADDRESS,    // sender must be the email account
+        from: process.env.languageisland980,    // sender must be the email account
         // these items are whatever, we send what was posted to us in the form!
         to : req.body.email,
         subject : req.body.title,
